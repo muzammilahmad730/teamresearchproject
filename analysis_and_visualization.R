@@ -29,5 +29,3 @@ lines(x_values, scaled_normal_curve, col = "red", lwd =2)
 plot(df$iq, df$gpa, xlab = "IQ", ylab = "GPA", main = "Scatterplot of IQ and GPA")  
 abline(lm(df$gpa ~ df$iq), col = "red") 
 
-#GPA is not normally distributed - so we will use Spearman
-cor.test(df$iq, df$gpa, method="spearman")
