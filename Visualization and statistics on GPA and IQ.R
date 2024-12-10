@@ -6,7 +6,7 @@ str(data)
 colSums(is.na(data))
 
 
-plot(data$gpa, data$iq, main = "Scatter Plot: GPA vs IQ",
+plot(data$gpa, data$iq, main = " GPA vs IQ",
      xlab = "GPA",
      ylab = "IQ",
      col = "blue",
@@ -17,7 +17,7 @@ hist(data$gpa, main = "GPA Distribution", xlab = "GPA",
      border = "black")
 
 hist(data$iq, main = "IQ Distribution", xlab = "IQ",
-     col = "lightgreen",
+     col = "GREY",
      border = "black")
 
 
@@ -28,13 +28,14 @@ sd_gpa <- sd(data$gpa)
 hist(data$gpa, main = "GPA Distribution with Normal Distribution Overlay", xlab = "GPA", 
      col = "skyblue", 
      border = "black", 
-     breaks = 50,   
+     breaks = 20,   
      probability = TRUE,   
      ylim = c(0, 0.5))    
 
+
 curve(dnorm(x, mean = mean(data$gpa), sd = sd(data$gpa)),
       col = "red",
-      lwd = 4,
+      lwd = 3,
       add = TRUE)  
        
     
