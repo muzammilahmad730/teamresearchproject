@@ -8,7 +8,7 @@ df <- gpa_iq
 
 # Create the histogram
 hist <- hist(df$gpa, freq = TRUE, 
-                  col = "skyblue", main = "Histogram of GPA",
+                  col = "blue", main = "Histogram of GPA",
                   xlab = "GPA", ylab = "Frequency")
 
 # Calculate mean and standard deviation of the data
