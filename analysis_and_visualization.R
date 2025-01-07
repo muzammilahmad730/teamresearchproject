@@ -2,16 +2,12 @@ library(readr)
 gpa_iq <- read_csv("gpa_iq.csv")
 df <- gpa_iq
 
-#Is there is a correlation between GPA and IQ?
-
-#check the data - if it is normal or not
 
 # Create the histogram
 hist <- hist(df$gpa, freq = TRUE, 
                   col = "skyblue", main = "Histogram of GPA",
                   xlab = "GPA", ylab = "Frequency")
 
-# Calculate mean and standard deviation of the data
 mean_gpa <- mean(df$gpa)
 sd_gpa <- sd(df$gpa)
 
