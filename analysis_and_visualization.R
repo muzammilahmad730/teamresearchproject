@@ -3,9 +3,7 @@ gpa_iq <- read_csv("gpa_iq.csv")
 df <- gpa_iq
 
 #Is there is a correlation between GPA and IQ?
-
 #check the data - if it is normal or not
-
 # Create the histogram
 hist <- hist(df$gpa, freq = TRUE, 
                   col = "skyblue", main = "Histogram of GPA",
@@ -27,5 +25,5 @@ lines(x_values, scaled_normal_curve, col = "pink", lwd =2)
 
 # Plot followed by trend line
 plot(df$iq, df$gpa, xlab = "IQ", ylab = "GPA", main = "Scatterplot of IQ and GPA")  
-abline(lm(df$gpa ~ df$iq), col = "red") 
+abline(lm(df$gpa ~ df$iq), col = "pink") 
 
