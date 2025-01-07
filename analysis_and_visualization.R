@@ -3,7 +3,7 @@ gpa_iq <- read_csv("gpa_iq.csv")
 df <- gpa_iq
 
 
-# Create the histogram
+
 hist <- hist(df$gpa, freq = TRUE, 
                   col = "skyblue", main = "Histogram of GPA",
                   xlab = "GPA", ylab = "Frequency")
