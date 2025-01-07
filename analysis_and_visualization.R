@@ -8,7 +8,7 @@ df <- gpa_iq
 
 # Create the histogram
 hist <- hist(df$gpa, freq = TRUE, 
-                  col = "blue", main = "Histogram of GPA",
+                  col = "skyblue", main = "Histogram of GPA",
                   xlab = "GPA", ylab = "Frequency")
 
 # Calculate mean and standard deviation of the data
@@ -23,9 +23,9 @@ normal_curve <- dnorm(x_values, mean = mean_gpa, sd = sd_gpa)
 scaled_normal_curve <- normal_curve * diff(hist$breaks[1:2]) * sum(hist$counts)
 
 # Adding the normal curve to the histogram
-lines(x_values, scaled_normal_curve, col = "red", lwd =2)
+lines(x_values, scaled_normal_curve, col = "pink", lwd =2)
 
 # Plot followed by trend line
 plot(df$iq, df$gpa, xlab = "IQ", ylab = "GPA", main = "Scatterplot of IQ and GPA")  
-abline(lm(df$gpa ~ df$iq), col = "red") 
+abline(lm(df$gpa ~ df$iq), col = "pink") 
 
